@@ -13,19 +13,19 @@ const routes: Routes = [
     path: '',
     component: SiteLayoutComponent,
     children : [
-        { path: 'Home', component: HomeComponent },
+        { path: '', component: HomeComponent ,pathMatch: 'full'},
         { path: 'About', component: AboutComponent },
-        { path: '',   redirectTo: '/Home', pathMatch: 'full' },
+      
       // { path: '**', component: HomeComponent },
         
     ]
 },
 
 {
-    path: 'admin',
+    path: '',
     component: AdminLayoutComponent,
     children : [
-      { path: '', component: LoginComponent},
+      { path: 'Login', component: LoginComponent},
     ]
 },
 
