@@ -14,10 +14,7 @@ const routes: Routes = [
     component: SiteLayoutComponent,
     children : [
         { path: '', component: HomeComponent ,pathMatch: 'full'},
-        { path: 'About', component: AboutComponent },
-      
-      // { path: '**', component: HomeComponent },
-        
+        { path: 'About', component: AboutComponent },      
     ]
 },
 
